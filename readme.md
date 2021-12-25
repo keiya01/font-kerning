@@ -9,7 +9,9 @@ kerning 周りを調整できて OTF + TTF がサポートされていれば良�
 - [fontdue](https://github.com/mooman219/fontdue)
 - [ab_glyph](https://github.com/alexheretic/ab-glyph)
 
-[images](https://github.com/keiya01/font-kerning/tree/4a6d4c520ed29457a0f0adf9d12b1bc39ca71235/images)にそれぞれのライブラリでparseしたfontを画像に描画してみたものをまとめています。
+[images](https://github.com/keiya01/font-kerning/tree/4a6d4c520ed29457a0f0adf9d12b1bc39ca71235/images)にそれぞれのライブラリで parse した font を画像に描画してみたものをまとめています。
+
+それぞれ NotoSansJp-Black.otf を使用しています。
 
 ## rusttype
 

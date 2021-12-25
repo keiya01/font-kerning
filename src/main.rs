@@ -11,7 +11,7 @@ fn fontdue() {
   let font = include_bytes!("../fonts/NotoSansJP-Black.otf") as &[u8];
   let font = Fontdue::from_bytes(font, FontSettings::default()).unwrap();
   let text = "こんにちは、世界!!";
-  draw_text_mut_fontdue(&mut canvas, color, 0, 0, 20., &font, text);
+  draw_text_mut_fontdue(&mut canvas, color, 0, 0, 100., &font, text);
   canvas.save(Path::new("./images/fontdue.png")).unwrap();
 }
 
@@ -30,7 +30,7 @@ fn rusttype() {
   let font = include_bytes!("../fonts/NotoSansJP-Black.otf") as &[u8];
   let font = Rusttype::try_from_bytes(font).unwrap();
   let text = "こんにちは、世界!!";
-  draw_text_mut_rusttype(&mut canvas, color, 0, 0, Scale::uniform(20.), &font, text);
+  draw_text_mut_rusttype(&mut canvas, color, 0, 0, Scale::uniform(100.), &font, text);
   canvas.save(Path::new("./images/rusttype.png")).unwrap();
 }
 
