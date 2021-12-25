@@ -5,9 +5,11 @@ kerning 周りを調整できて OTF + TTF がサポートされていれば良�
 
 使用するライブラリ
 
-- rusttype
-- fontdue
-- ab_glyph
+- [rusttype](https://github.com/redox-os/rusttype)
+- [fontdue](https://github.com/mooman219/fontdue)
+- [ab_glyph](https://github.com/alexheretic/ab-glyph)
+
+[images](https://github.com/keiya01/font-kerning/tree/4a6d4c520ed29457a0f0adf9d12b1bc39ca71235/images)にそれぞれのライブラリでparseしたfontを画像に描画してみたものをまとめています。
 
 ## rusttype
 
@@ -32,3 +34,7 @@ kerning 周りも制御できる。
 ttf_parser は ttf と書いてあるが OTF も扱える。
 
 ab_glyph は OTF を推していそうなので、OTF の便利機能も使えるかも(まだ試していない)。
+
+以下の画像は字詰めした上で letter-spacing を 10px あけた画像。
+
+![font kerning success](https://github.com/keiya01/font-kerning/blob/4a6d4c520ed29457a0f0adf9d12b1bc39ca71235/images/ab.png)
